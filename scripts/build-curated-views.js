@@ -21,7 +21,16 @@ function repoLink(item) {
 }
 
 function categoryLabel(item) {
-  return item.category.replace(/_/g, " ");
+  const labels = {
+    official_collections: "官方技能仓库",
+    specialized_skill_libraries: "专业领域技能库",
+    discovery_hubs: "聚合目录 / 发现型仓库",
+    ecosystem_standards: "标准 / 规范",
+    management_tools: "管理工具 / 构建器",
+    topic_pages: "GitHub Topics 入口页",
+  };
+
+  return labels[item.category] || item.category.replace(/_/g, " ");
 }
 
 function renderTable(headers, rows) {
@@ -99,13 +108,30 @@ async function main() {
     "",
     `更新时间：${data.updated_at}`,
     "",
+    "这是主索引之外的一份筛选型文档，用来帮助你更快地定位值得优先查看的 skills 仓库与目录。",
+    "",
     `当前索引共 \`${data.items.length}\` 个条目，其中可直接安装的 GitHub 仓库约 \`${installableItems.length}\` 个。`,
     "",
-    "这页是从主数据集里再切出来的 3 个实用视角：",
+    "## 视图概览",
     "",
-    "- 中文优先",
-    "- 可直接安装",
-    "- 垂直领域",
+    renderTable(
+      ["维度", "当前情况"],
+      [
+        ["总条目数", `\`${data.items.length}\``],
+        ["可直接安装仓库", `\`${installableItems.length}\``],
+        ["中文优先视图", `\`${curation.chinese_priority.length}\` 个重点仓库`],
+        ["垂直领域视图", `\`${curation.domain_views.length}\` 个专题分组`],
+      ],
+    ),
+    "",
+    "## 使用建议",
+    "",
+    "| 你现在想做什么 | 建议先看哪里 |",
+    "| --- | --- |",
+    "| 找中文社区常用资源 | `中文优先` |",
+    "| 找能直接安装的 skills | `可直接安装` |",
+    "| 按方向找仓库 | `垂直领域` 下的专题分组 |",
+    "| 做二次加工或自动化 | 回到 `data/ai-skills-links.json` |",
     "",
     "## 中文优先",
     "",

@@ -2,13 +2,27 @@
 
 更新时间：2026-04-22
 
+这是主索引之外的一份筛选型文档，用来帮助你更快地定位值得优先查看的 skills 仓库与目录。
+
 当前索引共 `50` 个条目，其中可直接安装的 GitHub 仓库约 `37` 个。
 
-这页是从主数据集里再切出来的 3 个实用视角：
+## 视图概览
 
-- 中文优先
-- 可直接安装
-- 垂直领域
+| 维度 | 当前情况 |
+| --- | --- |
+| 总条目数 | `50` |
+| 可直接安装仓库 | `37` |
+| 中文优先视图 | `5` 个重点仓库 |
+| 垂直领域视图 | `8` 个专题分组 |
+
+## 使用建议
+
+| 你现在想做什么 | 建议先看哪里 |
+| --- | --- |
+| 找中文社区常用资源 | `中文优先` |
+| 找能直接安装的 skills | `可直接安装` |
+| 按方向找仓库 | `垂直领域` 下的专题分组 |
+| 做二次加工或自动化 | 回到 `data/ai-skills-links.json` |
 
 ## 中文优先
 
@@ -24,43 +38,43 @@
 
 | 仓库 | Stars | 分类 | 备注 |
 | --- | --- | --- | --- |
-| [anthropics/skills](https://github.com/anthropics/skills) | 122,205 | official collections | Anthropic official public Agent Skills repository with skills, spec, and template. |
-| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 34,542 | discovery hubs | Large installable catalog with 1400+ skills, bundles, workflows, and docs. |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25,523 | official collections | Vercel official skill collection focused on React, Next.js, design review, and deployment. |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 20,778 | official collections | Production-grade engineering workflow skills organized around spec, plan, build, test, review, and ship. |
-| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | 19,335 | specialized skill libraries | Persistent markdown planning skill inspired by Manus-style workflows. |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 19,184 | specialized skill libraries | Research, science, engineering, analysis, finance, and writing skills. |
-| [openai/skills](https://github.com/openai/skills) | 17,262 | official collections | OpenAI official skills catalog for Codex. |
-| [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 15,956 | specialized skill libraries | Large community skills collection popular in the Chinese agent ecosystem. |
-| [vercel-labs/skills](https://github.com/vercel-labs/skills) | 15,252 | management tools | Open CLI for installing and managing open Agent Skills repositories. |
-| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 12,311 | specialized skill libraries | Large multi-domain marketplace of skills and plugins for coding agents. |
-| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 10,497 | specialized skill libraries | PM skills marketplace covering discovery, strategy, launch, and growth. |
-| [huggingface/skills](https://github.com/huggingface/skills) | 10,268 | official collections | Hugging Face official skills for datasets, training, papers, Gradio, Hub CLI, and more. |
-| [trailofbits/skills](https://github.com/trailofbits/skills) | 4,729 | official collections | Trail of Bits skills for security research, vulnerability detection, and audit workflows. |
-| [antfu/skills](https://github.com/antfu/skills) | 4,672 | specialized skill libraries | Anthony Fu curated collection of agent skills. |
-| [microsoft/skills](https://github.com/microsoft/skills) | 2,116 | official collections | Microsoft collection of skills, MCP servers, custom agents, and AGENTS.md resources for coding agents. |
-| [jeremylongshore/claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) | 2,003 | discovery hubs | Marketplace-style collection of Claude Code plugins, skills, and agents. |
-| [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 1,886 | specialized skill libraries | Open-source finance analysis skill collection. |
-| [runkids/skillshare](https://github.com/runkids/skillshare) | 1,580 | management tools | Cross-tool skill sync, audit, and management with CLI and UI. |
-| [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 1,513 | specialized skill libraries | Markdown-to-WeChat publishing skill for Chinese content workflows. |
-| [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | 789 | discovery hubs | Codex-oriented curated skills for practical workflow automation. |
-| [jiweiyeah/Skills-Manager](https://github.com/jiweiyeah/Skills-Manager) | 552 | management tools | Desktop GUI for organizing, syncing, and sharing skills. |
-| [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp) | 484 | management tools | VS Code extension for discovering and installing MCP resources for coding agents. |
-| [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) | 472 | specialized skill libraries | Agent skills for iOS, SwiftUI, and modern Apple framework workflows. |
-| [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 410 | specialized skill libraries | SEO analysis skill with sub-skills, specialist agents, and evidence-collector scripts. |
-| [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills) | 289 | discovery hubs | Curated AI coding agent skills and AGENTS.md playbooks. |
-| [aiskillstore/marketplace](https://github.com/aiskillstore/marketplace) | 258 | discovery hubs | Marketplace of security-audited skills for Claude and Codex ecosystems. |
-| [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | 211 | specialized skill libraries | Playwright-focused testing skill and best-practice guide. |
-| [LukasNiessen/terrashark](https://github.com/LukasNiessen/terrashark) | 153 | specialized skill libraries | Terraform skill for grounding IaC work in official Hashicorp best practices. |
-| [smnandre/symfony-ux-skills](https://github.com/smnandre/symfony-ux-skills) | 141 | specialized skill libraries | Symfony UX skills for Live Component, Twig Component, Turbo, and Stimulus workflows. |
-| [gapmiss/obsidian-plugin-skill](https://github.com/gapmiss/obsidian-plugin-skill) | 123 | specialized skill libraries | Agent skill for Obsidian plugin development. |
-| [proflead/codex-skills-library](https://github.com/proflead/codex-skills-library) | 92 | specialized skill libraries | Curated library of reusable Codex skills for developers, individuals, and teams. |
-| [monte-carlo-data/mc-agent-toolkit](https://github.com/monte-carlo-data/mc-agent-toolkit) | 76 | management tools | Toolkit of skills and plugins for monitoring, triage, troubleshooting, and health checks. |
-| [Dianel555/DSkills](https://github.com/Dianel555/DSkills) | 64 | specialized skill libraries | CLI tools skills for AI coding assistants. |
-| [athola/skrills](https://github.com/athola/skrills) | 59 | management tools | Coordinate, validate, analyze, and sync skills across multiple coding CLIs. |
-| [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 58 | specialized skill libraries | Baidu Netdisk skill for upload, download, transfer, share, and search workflows. |
-| [VapiAI/skills](https://github.com/VapiAI/skills) | 35 | official collections | Official Vapi skills and MCP connector resources for building voice agents. |
-| [block/agent-skills](https://github.com/block/agent-skills) | 11 | official collections | Block-maintained marketplace-style repository for reusable agent skills. |
+| [anthropics/skills](https://github.com/anthropics/skills) | 122,205 | 官方技能仓库 | Anthropic official public Agent Skills repository with skills, spec, and template. |
+| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 34,542 | 聚合目录 / 发现型仓库 | Large installable catalog with 1400+ skills, bundles, workflows, and docs. |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25,523 | 官方技能仓库 | Vercel official skill collection focused on React, Next.js, design review, and deployment. |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 20,778 | 官方技能仓库 | Production-grade engineering workflow skills organized around spec, plan, build, test, review, and ship. |
+| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | 19,335 | 专业领域技能库 | Persistent markdown planning skill inspired by Manus-style workflows. |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 19,184 | 专业领域技能库 | Research, science, engineering, analysis, finance, and writing skills. |
+| [openai/skills](https://github.com/openai/skills) | 17,262 | 官方技能仓库 | OpenAI official skills catalog for Codex. |
+| [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 15,956 | 专业领域技能库 | Large community skills collection popular in the Chinese agent ecosystem. |
+| [vercel-labs/skills](https://github.com/vercel-labs/skills) | 15,252 | 管理工具 / 构建器 | Open CLI for installing and managing open Agent Skills repositories. |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 12,311 | 专业领域技能库 | Large multi-domain marketplace of skills and plugins for coding agents. |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 10,497 | 专业领域技能库 | PM skills marketplace covering discovery, strategy, launch, and growth. |
+| [huggingface/skills](https://github.com/huggingface/skills) | 10,268 | 官方技能仓库 | Hugging Face official skills for datasets, training, papers, Gradio, Hub CLI, and more. |
+| [trailofbits/skills](https://github.com/trailofbits/skills) | 4,729 | 官方技能仓库 | Trail of Bits skills for security research, vulnerability detection, and audit workflows. |
+| [antfu/skills](https://github.com/antfu/skills) | 4,672 | 专业领域技能库 | Anthony Fu curated collection of agent skills. |
+| [microsoft/skills](https://github.com/microsoft/skills) | 2,116 | 官方技能仓库 | Microsoft collection of skills, MCP servers, custom agents, and AGENTS.md resources for coding agents. |
+| [jeremylongshore/claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) | 2,003 | 聚合目录 / 发现型仓库 | Marketplace-style collection of Claude Code plugins, skills, and agents. |
+| [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 1,886 | 专业领域技能库 | Open-source finance analysis skill collection. |
+| [runkids/skillshare](https://github.com/runkids/skillshare) | 1,580 | 管理工具 / 构建器 | Cross-tool skill sync, audit, and management with CLI and UI. |
+| [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 1,513 | 专业领域技能库 | Markdown-to-WeChat publishing skill for Chinese content workflows. |
+| [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | 789 | 聚合目录 / 发现型仓库 | Codex-oriented curated skills for practical workflow automation. |
+| [jiweiyeah/Skills-Manager](https://github.com/jiweiyeah/Skills-Manager) | 552 | 管理工具 / 构建器 | Desktop GUI for organizing, syncing, and sharing skills. |
+| [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp) | 484 | 管理工具 / 构建器 | VS Code extension for discovering and installing MCP resources for coding agents. |
+| [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) | 472 | 专业领域技能库 | Agent skills for iOS, SwiftUI, and modern Apple framework workflows. |
+| [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 410 | 专业领域技能库 | SEO analysis skill with sub-skills, specialist agents, and evidence-collector scripts. |
+| [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills) | 289 | 聚合目录 / 发现型仓库 | Curated AI coding agent skills and AGENTS.md playbooks. |
+| [aiskillstore/marketplace](https://github.com/aiskillstore/marketplace) | 258 | 聚合目录 / 发现型仓库 | Marketplace of security-audited skills for Claude and Codex ecosystems. |
+| [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | 211 | 专业领域技能库 | Playwright-focused testing skill and best-practice guide. |
+| [LukasNiessen/terrashark](https://github.com/LukasNiessen/terrashark) | 153 | 专业领域技能库 | Terraform skill for grounding IaC work in official Hashicorp best practices. |
+| [smnandre/symfony-ux-skills](https://github.com/smnandre/symfony-ux-skills) | 141 | 专业领域技能库 | Symfony UX skills for Live Component, Twig Component, Turbo, and Stimulus workflows. |
+| [gapmiss/obsidian-plugin-skill](https://github.com/gapmiss/obsidian-plugin-skill) | 123 | 专业领域技能库 | Agent skill for Obsidian plugin development. |
+| [proflead/codex-skills-library](https://github.com/proflead/codex-skills-library) | 92 | 专业领域技能库 | Curated library of reusable Codex skills for developers, individuals, and teams. |
+| [monte-carlo-data/mc-agent-toolkit](https://github.com/monte-carlo-data/mc-agent-toolkit) | 76 | 管理工具 / 构建器 | Toolkit of skills and plugins for monitoring, triage, troubleshooting, and health checks. |
+| [Dianel555/DSkills](https://github.com/Dianel555/DSkills) | 64 | 专业领域技能库 | CLI tools skills for AI coding assistants. |
+| [athola/skrills](https://github.com/athola/skrills) | 59 | 管理工具 / 构建器 | Coordinate, validate, analyze, and sync skills across multiple coding CLIs. |
+| [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 58 | 专业领域技能库 | Baidu Netdisk skill for upload, download, transfer, share, and search workflows. |
+| [VapiAI/skills](https://github.com/VapiAI/skills) | 35 | 官方技能仓库 | Official Vapi skills and MCP connector resources for building voice agents. |
+| [block/agent-skills](https://github.com/block/agent-skills) | 11 | 官方技能仓库 | Block-maintained marketplace-style repository for reusable agent skills. |
 
 ## Security & Audit
 
