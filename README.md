@@ -6,6 +6,10 @@
 ![status](https://img.shields.io/badge/status-active-22c55e)
 ![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
 
+![仓库看板娘](assets/repo-guide-girl.png)
+
+> 这是我们仓库的原创看板娘“技能导航娘”，负责带你快速找到适合 `Codex`、`Claude Code`、`GitHub Copilot` 等代理的 skills、目录和工具。
+
 更新时间：2026-04-22
 
 这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skill 资源整理仓库。
