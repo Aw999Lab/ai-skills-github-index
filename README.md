@@ -1,5 +1,11 @@
 # AI Skills GitHub 索引
 
+![skills curated](https://img.shields.io/badge/skills-curated-2563eb)
+![github links](https://img.shields.io/badge/github-links%2018-111827)
+![agents](https://img.shields.io/badge/agents-Codex%20%7C%20Claude%20%7C%20Copilot-16a34a)
+![status](https://img.shields.io/badge/status-active-22c55e)
+![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
+
 更新时间：2026-04-22
 
 这是一个面向 `Codex`、`Claude Code`、`Gemini CLI`、`Cursor`、`GitHub Copilot` 等 AI 编码代理的 GitHub skill 资源整理仓库。
@@ -10,6 +16,55 @@
 - 可以直接安装给 AI agent 使用
 - 能帮助你发现、同步、管理、筛选 skills
 - 近期仍在维护，且社区活跃度较高
+
+## 目录导航
+
+- [快速开始](#快速开始)
+- [按 Agent 分组速查](#按-agent-分组速查)
+- [推荐先看](#推荐先看)
+- [仓库内容](#仓库内容)
+- [使用建议](#使用建议)
+- [备注](#备注)
+
+## 快速开始
+
+### 如果你主要用 Codex
+
+优先看这些：
+
+- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- [huggingface/skills](https://github.com/huggingface/skills)
+- [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills)
+- [GitHub Topics: codex-skills](https://github.com/topics/codex-skills)
+
+### 如果你主要用 Claude Code
+
+优先看这些：
+
+- [anthropics/skills](https://github.com/anthropics/skills)
+- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
+- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
+- [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
+- [GitHub Topics: claude-code-skills](https://github.com/topics/claude-code-skills)
+
+### 如果你主要用 GitHub Copilot
+
+优先看这些：
+
+- [github/awesome-copilot](https://github.com/github/awesome-copilot)
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp)
+- [runkids/skillshare](https://github.com/runkids/skillshare)
+
+## 按 Agent 分组速查
+
+| Agent | 建议先看 | 说明 |
+| --- | --- | --- |
+| Codex | `vercel-labs/agent-skills` / `addyosmani/agent-skills` / `huggingface/skills` / `ComposioHQ/awesome-codex-skills` | 偏工程工作流、Web 项目、AI/ML 任务和 Codex 定向能力 |
+| Claude Code | `anthropics/skills` / `vercel-labs/agent-skills` / `VoltAgent/awesome-agent-skills` / `sickn33/antigravity-awesome-skills` | 适合先看官方 skill 规范，再看大规模聚合库 |
+| GitHub Copilot | `github/awesome-copilot` / `addyosmani/agent-skills` / `VikashLoomba/copilot-mcp` | 偏 Copilot 生态资源、工程流程技能和工具发现 |
+| 通用跨工具 | `runkids/skillshare` / `vercel-labs/skills` / `jiweiyeah/Skills-Manager` | 适合同时维护多套 AI CLI / IDE 助手的技能体系 |
 
 ## 推荐先看
 
@@ -39,7 +94,7 @@
 - 本仓库偏“资源整理”，不是单一 skill 安装包。
 - 星标、活跃度和兼容性说明基于 2026-04-22 的 GitHub 检索结果整理。
 - 后续如果你要，我可以继续帮你补一版：
-  - 按 `Codex` 专用筛选
   - 按中文资源优先筛选
   - 按“可直接安装”排序
-  - 生成适合放在你 GitHub 首页的更漂亮版本
+  - 增加 `stars` / `license` / `last_checked` 字段
+  - 做一个自动更新脚本，定期同步最新 skill 仓库
