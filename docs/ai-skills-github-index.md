@@ -2,6 +2,28 @@
 
 更新时间：2026-04-22
 
+## 0. 数据维护方式
+
+当前仓库已经包含一个可重复运行的更新脚本：
+
+```bash
+node scripts/update-github-metadata.js
+```
+
+它会自动为 `github_repo` 条目刷新：
+
+- `stars`
+- `forks`
+- `open_issues`
+- `watchers`
+- `license`
+- `archived`
+- `default_branch`
+- `created_at`
+- `updated_at`
+- `pushed_at`
+- `last_checked`
+
 ## 1. 按 Agent 分组速查
 
 ### Codex

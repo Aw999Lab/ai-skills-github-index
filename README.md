@@ -82,6 +82,38 @@
 
 - [详细索引](docs/ai-skills-github-index.md)
 - [JSON 数据](data/ai-skills-links.json)
+- [更新脚本](scripts/update-github-metadata.js)
+
+## 元数据字段
+
+`data/ai-skills-links.json` 现在会尽量为 GitHub 仓库类条目补这些字段：
+
+- `stars`
+- `forks`
+- `open_issues`
+- `watchers`
+- `license`
+- `archived`
+- `default_branch`
+- `created_at`
+- `updated_at`
+- `pushed_at`
+- `last_checked`
+
+## 刷新方式
+
+直接运行：
+
+```bash
+node scripts/update-github-metadata.js
+```
+
+说明：
+
+- 脚本会读取 `data/ai-skills-links.json`
+- 仅对 `kind = github_repo` 的条目请求 GitHub API
+- `GitHub Topics` 这类入口页会保留原始信息
+- 如果设置了 `GITHUB_TOKEN` 或 `GH_TOKEN`，请求配额会更稳
 
 ## 使用建议
 
@@ -92,9 +124,8 @@
 ## 备注
 
 - 本仓库偏“资源整理”，不是单一 skill 安装包。
-- 星标、活跃度和兼容性说明基于 2026-04-22 的 GitHub 检索结果整理。
+- 星标、License 和仓库活跃度字段可以通过更新脚本刷新。
 - 后续如果你要，我可以继续帮你补一版：
   - 按中文资源优先筛选
   - 按“可直接安装”排序
-  - 增加 `stars` / `license` / `last_checked` 字段
   - 做一个自动更新脚本，定期同步最新 skill 仓库
