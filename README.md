@@ -16,11 +16,13 @@
 
 当前已整理 `50` 个 GitHub 条目，覆盖：
 
-- 官方技能仓库
-- 专业领域技能库
-- 大型技能目录 / 聚合仓库
-- 技能标准、构建器与管理工具
-- GitHub Topics 入口页
+| 类型 | 说明 |
+| --- | --- |
+| 官方技能仓库 | 官方或高质量原生 skills 仓库 |
+| 专业领域技能库 | 安全、科研、产品、测试、中文工作流等垂直方向 |
+| 大型技能目录 / 聚合仓库 | 用来批量发现和筛选 skills |
+| 标准、构建器与管理工具 | 适合安装、同步、管理、审计、生成视图 |
+| GitHub Topics 入口页 | 用来继续往外扩搜更多仓库 |
 
 ## 目录导航
 
@@ -40,67 +42,40 @@
 
 ## 快速开始
 
-### 如果你主要用 Codex
+### 按 Agent 选仓库
 
-优先看这些：
+| Agent | 优先仓库 | 适合场景 |
+| --- | --- | --- |
+| Codex | [openai/skills](https://github.com/openai/skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), [huggingface/skills](https://github.com/huggingface/skills), [microsoft/skills](https://github.com/microsoft/skills), [trailofbits/skills](https://github.com/trailofbits/skills), [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills), [GitHub Topics: codex-skills](https://github.com/topics/codex-skills) | 官方目录、工程流、AI/ML、审计、安全、继续扩展 |
+| Claude Code | [anthropics/skills](https://github.com/anthropics/skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [trailofbits/skills](https://github.com/trailofbits/skills), [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills), [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code), [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills), [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills), [GitHub Topics: claude-code-skills](https://github.com/topics/claude-code-skills) | 官方 skills、聚合目录、生态市场、安全研究 |
+| GitHub Copilot | [github/awesome-copilot](https://github.com/github/awesome-copilot), [microsoft/skills](https://github.com/microsoft/skills), [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp), [runkids/skillshare](https://github.com/runkids/skillshare) | Copilot 生态、工程流程、MCP 发现、跨工具同步 |
 
-- [openai/skills](https://github.com/openai/skills)
-- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-- [huggingface/skills](https://github.com/huggingface/skills)
-- [microsoft/skills](https://github.com/microsoft/skills)
-- [trailofbits/skills](https://github.com/trailofbits/skills)
-- [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills)
-- [GitHub Topics: codex-skills](https://github.com/topics/codex-skills)
+### 按领域选仓库
 
-### 如果你主要用 Claude Code
-
-优先看这些：
-
-- [anthropics/skills](https://github.com/anthropics/skills)
-- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
-- [trailofbits/skills](https://github.com/trailofbits/skills)
-- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
-- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
-- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)
-- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
-- [GitHub Topics: claude-code-skills](https://github.com/topics/claude-code-skills)
-
-### 如果你主要用 GitHub Copilot
-
-优先看这些：
-
-- [github/awesome-copilot](https://github.com/github/awesome-copilot)
-- [microsoft/skills](https://github.com/microsoft/skills)
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-- [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp)
-- [runkids/skillshare](https://github.com/runkids/skillshare)
-
-### 如果你想按专业领域找 skills
-
-优先看这些：
-
-- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
-- [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills)
-- [phuryn/pm-skills](https://github.com/phuryn/pm-skills)
-- [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills)
-- [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill)
-- [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill)
+| 领域 | 优先仓库 | 说明 |
+| --- | --- | --- |
+| 科研 / AI / 分析 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills), [huggingface/skills](https://github.com/huggingface/skills) | 科研、论文、数据集、训练与分析 |
+| 产品 / PM / 增长 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills), [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 产品发现、策略、增长、SEO |
+| 安全 / 审计 / IaC | [trailofbits/skills](https://github.com/trailofbits/skills), [LukasNiessen/terrashark](https://github.com/LukasNiessen/terrashark), [cisco-ai-defense/skill-scanner](https://github.com/cisco-ai-defense/skill-scanner) | 安全研究、Terraform、skills 扫描 |
+| iOS / 前端 / 测试 | [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills), [smnandre/symfony-ux-skills](https://github.com/smnandre/symfony-ux-skills), [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | iOS、Symfony UX、Playwright |
+| 中文工作流 | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills), [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill), [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 中文技能集、公众号、网盘流程 |
 
 ## 这次新增的重点仓库
 
-- [openai/skills](https://github.com/openai/skills): OpenAI 官方 Codex skills 目录
-- [microsoft/skills](https://github.com/microsoft/skills): Microsoft 的 skills、MCP、AGENTS.md 资源集合
-- [trailofbits/skills](https://github.com/trailofbits/skills): 偏安全研究与漏洞审计的技能库
-- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills): 高热度 Claude skills 聚合目录
-- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code): Claude Code 生态大目录
-- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills): 科研、工程、分析方向技能库
-- [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills): 中文社区里很有代表性的 skills 集合
-- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills): 大型多领域技能市场
-- [phuryn/pm-skills](https://github.com/phuryn/pm-skills): 产品经理 / 增长 / 策略方向技能库
-- [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills): iOS / Swift / SwiftUI 专用技能库
-- [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill): Playwright 测试技能
-- [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage): 百度网盘文件工作流 skill
+| 仓库 | 方向 | 说明 |
+| --- | --- | --- |
+| [openai/skills](https://github.com/openai/skills) | 官方 | OpenAI 官方 Codex skills 目录 |
+| [microsoft/skills](https://github.com/microsoft/skills) | 官方 / 平台生态 | skills、MCP、AGENTS.md 资源集合 |
+| [trailofbits/skills](https://github.com/trailofbits/skills) | 安全 | 偏安全研究与漏洞审计 |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 聚合目录 | Claude skills 高热度导航 |
+| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 聚合目录 | Claude Code 生态大目录 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 科研 / 分析 | 科研、工程、分析方向技能库 |
+| [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 中文优先 | 中文社区里较有代表性的 skills 集合 |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 多领域市场 | 工程、营销、产品、合规等多方向 |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 产品 / 增长 | 产品经理、增长、策略方向技能库 |
+| [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) | iOS / Swift | SwiftUI 与 Apple 框架工作流 |
+| [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | 测试 | Playwright 测试技能 |
+| [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 中文工作流 | 百度网盘文件工作流 skill |
 
 ## 仓库内容
 
