@@ -10,6 +10,20 @@
 
 > 这是我们仓库的原创侦探系看板娘“技能导航娘”，用更像“整理线索”的方式带你快速找到适合 `Codex`、`Claude Code`、`GitHub Copilot` 等代理的 skills、目录和工具。
 
+## 导航娘速读
+
+> “如果你不想在一堆仓库里盲翻，我来帮你先把线索整理好。”
+>
+> “这个项目不是单一 skill 安装包，而是一份持续扩展的 AI skills GitHub 索引。你可以用它快速定位官方仓库、可直接安装的 skills、中文优先资源、以及不同垂直领域里值得继续深挖的项目。”
+
+| 你现在想做什么 | 建议先看哪里 |
+| --- | --- |
+| 找官方高质量 skills | `按 Agent 选仓库`、`官方技能仓库` |
+| 找能直接装的 skills | [docs/skill-views.md](docs/skill-views.md) 里的 `可直接安装` |
+| 找中文资源 | [docs/skill-views.md](docs/skill-views.md) 里的 `中文优先` |
+| 找某个垂直方向 | `按领域选仓库`、[docs/skill-views.md](docs/skill-views.md) |
+| 想继续往外扩搜 | `GitHub Topics 入口页`、详细索引页 |
+
 更新时间：2026-04-22
 
 这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skill 资源整理仓库。
