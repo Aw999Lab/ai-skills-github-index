@@ -64,17 +64,17 @@ async function main() {
       return [
         repoLink(item),
         item.compatible_agents.join(", "),
-        formatNumber(item.stars),
         entry.why,
+        formatNumber(item.stars),
       ];
     })
     .filter(Boolean);
 
   const installableRows = installableItems.map((item) => [
     repoLink(item),
-    formatNumber(item.stars),
     categoryLabel(item),
     item.notes || item.description || "-",
+    formatNumber(item.stars),
   ]);
 
   const domainSections = curation.domain_views
@@ -84,9 +84,9 @@ async function main() {
         .filter(Boolean)
         .map((item) => [
           repoLink(item),
-          formatNumber(item.stars),
           item.compatible_agents.join(", "),
           item.notes || item.description || "-",
+          formatNumber(item.stars),
         ]);
 
       if (rows.length === 0) {
@@ -94,11 +94,11 @@ async function main() {
       }
 
       return [
-        `## ${domain.title}`,
+        `### ${domain.title}`,
         "",
         domain.description,
         "",
-        renderTable(["仓库", "Stars", "适配", "备注"], rows),
+        renderTable(["仓库", "适配", "说明", "Stars"], rows),
       ].join("\n");
     })
     .filter(Boolean);
@@ -108,9 +108,20 @@ async function main() {
     "",
     `更新时间：${data.updated_at}`,
     "",
-    "这是主索引之外的一份筛选型文档，用来帮助你更快地定位值得优先查看的 skills 仓库与目录。",
+    "这是主索引之外的一份筛选文档，用来帮助你更快定位值得优先查看的 skills 仓库、安装入口和垂直领域资源。",
     "",
     `当前索引共 \`${data.items.length}\` 个条目，其中可直接安装的 GitHub 仓库约 \`${installableItems.length}\` 个。`,
+    "",
+    "## 文档导航",
+    "",
+    renderTable(
+      ["入口", "用途"],
+      [
+        ["[仓库首页](../README.md)", "查看项目概览、核心入口与代表性仓库"],
+        ["[详细索引](ai-skills-github-index.md)", "系统浏览完整分类和大盘目录"],
+        ["[JSON 数据](../data/ai-skills-links.json)", "读取结构化数据做二次加工"],
+      ],
+    ),
     "",
     "## 视图概览",
     "",
@@ -124,22 +135,27 @@ async function main() {
       ],
     ),
     "",
-    "## 使用建议",
+    "## 怎么用这页",
     "",
-    "| 你现在想做什么 | 建议先看哪里 |",
-    "| --- | --- |",
-    "| 找中文社区常用资源 | `中文优先` |",
-    "| 找能直接安装的 skills | `可直接安装` |",
-    "| 按方向找仓库 | `垂直领域` 下的专题分组 |",
-    "| 做二次加工或自动化 | 回到 `data/ai-skills-links.json` |",
+    renderTable(
+      ["你现在想做什么", "建议先看哪里"],
+      [
+        ["找中文社区常用资源", "`中文优先`"],
+        ["找能直接安装的 skills", "`可直接安装`"],
+        ["按方向找仓库", "`垂直领域速查` 下的专题分组"],
+        ["想回到完整目录", "[详细索引](ai-skills-github-index.md)"],
+      ],
+    ),
     "",
     "## 中文优先",
     "",
-    renderTable(["仓库", "适配", "Stars", "为什么先看"], chineseRows),
+    renderTable(["仓库", "适配", "为什么先看", "Stars"], chineseRows),
     "",
     "## 可直接安装",
     "",
-    renderTable(["仓库", "Stars", "分类", "备注"], installableRows),
+    renderTable(["仓库", "分类", "说明", "Stars"], installableRows),
+    "",
+    "## 垂直领域速查",
     "",
     ...domainSections.flatMap((section) => [section, ""]),
   ].join("\n");

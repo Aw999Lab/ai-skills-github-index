@@ -24,7 +24,7 @@
   ],
   "domain_views": [
     {
-      "title": "Security & Audit",
+      "title": "安全与审计",
       "description": "适合安全研究、漏洞审计、IaC 合规和风险扫描。",
       "repos": [
         "trailofbits/skills",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "title": "Research & Science",
+      "title": "科研与分析",
       "description": "适合科研、分析、数据驱动研究和 AI/ML 工作流。",
       "repos": [
         "huggingface/skills",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "title": "Product, PM & Growth",
+      "title": "产品、PM 与增长",
       "description": "适合产品发现、路线图、增长、SEO 和策略工作。",
       "repos": [
         "phuryn/pm-skills",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "title": "Testing & QA",
+      "title": "测试与 QA",
       "description": "适合 Playwright、Web 测试和验证工作流。",
       "repos": [
         "testdino-hq/playwright-skill",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "title": "Apple, Mobile & Frontend",
+      "title": "Apple、移动端与前端",
       "description": "适合 iOS、SwiftUI、Symfony UX、前端和应用 UI 流程。",
       "repos": [
         "dpearson2699/swift-ios-skills",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "title": "Knowledge, Planning & Writing",
+      "title": "知识、规划与写作",
       "description": "适合长期知识库、规划、内容与文档流。",
       "repos": [
         "OthmanAdi/planning-with-files",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "title": "Developer Tooling & Sync",
+      "title": "工具链与同步",
       "description": "适合 skills 安装、同步、审计、市场和团队管理。",
       "repos": [
         "vercel-labs/skills",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "title": "Voice, Files & Chinese Workflows",
+      "title": "语音、文件与中文工作流",
       "description": "适合语音代理、文件流转与中文本地化工作场景。",
       "repos": [
         "VapiAI/skills",
