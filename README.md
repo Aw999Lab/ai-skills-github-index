@@ -8,27 +8,22 @@
 
 ![仓库侦探系看板娘](assets/repo-guide-detective-banner.png)
 
-> 这是我们仓库的原创侦探系看板娘“技能导航娘”，用更像“整理线索”的方式带你快速找到适合 `Codex`、`Claude Code`、`GitHub Copilot` 等代理的 skills、目录和工具。
-
-## 导航娘速读
-
-> “如果你不想在一堆仓库里盲翻，我来帮你先把线索整理好。”
->
-> “这个项目不是单一 skill 安装包，而是一份持续扩展的 AI skills GitHub 索引。你可以用它快速定位官方仓库、可直接安装的 skills、中文优先资源、以及不同垂直领域里值得继续深挖的项目。”
-
-| 你现在想做什么 | 建议先看哪里 |
-| --- | --- |
-| 找官方高质量 skills | `按 Agent 选仓库`、`官方技能仓库` |
-| 找能直接装的 skills | [docs/skill-views.md](docs/skill-views.md) 里的 `可直接安装` |
-| 找中文资源 | [docs/skill-views.md](docs/skill-views.md) 里的 `中文优先` |
-| 找某个垂直方向 | `按领域选仓库`、[docs/skill-views.md](docs/skill-views.md) |
-| 想继续往外扩搜 | `GitHub Topics 入口页`、详细索引页 |
-
 更新时间：2026-04-22
 
-这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skill 资源整理仓库。
+这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skills 索引仓库，用来帮助开发者快速发现官方 skills、可直接安装的仓库、中文优先资源、以及不同垂直领域里值得继续深挖的项目。
 
-当前已整理 `50` 个 GitHub 条目，覆盖：
+## 项目概览
+
+| 指标 | 当前情况 |
+| --- | --- |
+| 条目总数 | `50` |
+| 可直接安装仓库 | `37` |
+| 官方技能仓库 | `10` |
+| 专业领域技能库 | `17` |
+| 聚合目录 / 发现型仓库 | `11` |
+| 管理工具 / 构建器 | `8` |
+| GitHub Topics 入口页 | `3` |
+| 最近刷新 | `2026-04-22` |
 
 | 类型 | 说明 |
 | --- | --- |
@@ -38,21 +33,15 @@
 | 标准、构建器与管理工具 | 适合安装、同步、管理、审计、生成视图 |
 | GitHub Topics 入口页 | 用来继续往外扩搜更多仓库 |
 
-## 目录导航
+## 核心入口
 
-- [快速开始](#快速开始)
-- [快速视图](#快速视图)
-- [这次新增的重点仓库](#这次新增的重点仓库)
-- [仓库内容](#仓库内容)
-- [元数据字段](#元数据字段)
-- [刷新方式](#刷新方式)
-- [备注](#备注)
-
-## 快速视图
-
-如果你不想先看完整索引，可以直接看这页：
-
-- [中文优先 / 可直接安装 / 垂直领域视图](docs/skill-views.md)
+| 入口 | 用途 |
+| --- | --- |
+| [详细索引](docs/ai-skills-github-index.md) | 查看完整分类与代表性仓库 |
+| [快速视图](docs/skill-views.md) | 直接按中文优先、可安装、垂直领域筛选 |
+| [JSON 数据](data/ai-skills-links.json) | 读取结构化数据做二次加工 |
+| [元数据更新脚本](scripts/update-github-metadata.js) | 刷新 stars、license、更新时间等仓库元数据 |
+| [视图生成脚本](scripts/build-curated-views.js) | 生成快速视图文档 |
 
 ## 快速开始
 
@@ -74,7 +63,7 @@
 | iOS / 前端 / 测试 | [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills), [smnandre/symfony-ux-skills](https://github.com/smnandre/symfony-ux-skills), [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | iOS、Symfony UX、Playwright |
 | 中文工作流 | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills), [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill), [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 中文技能集、公众号、网盘流程 |
 
-## 这次新增的重点仓库
+## 代表性仓库
 
 | 仓库 | 方向 | 说明 |
 | --- | --- | --- |
@@ -91,15 +80,7 @@
 | [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill) | 测试 | Playwright 测试技能 |
 | [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage) | 中文工作流 | 百度网盘文件工作流 skill |
 
-## 仓库内容
-
-- [详细索引](docs/ai-skills-github-index.md)
-- [快速视图](docs/skill-views.md)
-- [JSON 数据](data/ai-skills-links.json)
-- [更新脚本](scripts/update-github-metadata.js)
-- [视图生成脚本](scripts/build-curated-views.js)
-
-## 元数据字段
+## 数据维护
 
 `data/ai-skills-links.json` 会尽量为 GitHub 仓库类条目补这些字段：
 
@@ -114,8 +95,6 @@
 - `updated_at`
 - `pushed_at`
 - `last_checked`
-
-## 刷新方式
 
 直接运行：
 
