@@ -1,0 +1,178 @@
+{
+  "updated_at": "2026-04-22",
+  "description": "Curated GitHub links for AI-agent skills, skill libraries, discovery hubs, and skill management tools.",
+  "items": [
+    {
+      "name": "anthropics/skills",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/anthropics/skills",
+      "compatible_agents": ["Claude Code", "Claude.ai", "Claude API"],
+      "installable": true,
+      "notes": "Anthropic official public Agent Skills repository with skills, spec, and template.",
+      "stars_approx": 122000
+    },
+    {
+      "name": "vercel-labs/agent-skills",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "compatible_agents": ["Claude Code", "Codex", "Cursor", "Other skill-compatible agents"],
+      "installable": true,
+      "notes": "Vercel official skill collection focused on React, Next.js, design review, and deployment.",
+      "stars_approx": 25500
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "compatible_agents": ["Claude Code", "Codex", "GitHub Copilot", "Gemini CLI", "Other agents"],
+      "installable": true,
+      "notes": "Production-grade engineering workflow skills organized around spec, plan, build, test, review, and ship.",
+      "stars_approx": 19800
+    },
+    {
+      "name": "huggingface/skills",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/huggingface/skills",
+      "compatible_agents": ["Codex", "Claude Code", "Gemini CLI", "Cursor"],
+      "installable": true,
+      "notes": "Hugging Face official skills for datasets, training, papers, Gradio, Hub CLI, and more.",
+      "stars_approx": 10200
+    },
+    {
+      "name": "github/awesome-copilot",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/github/awesome-copilot",
+      "compatible_agents": ["GitHub Copilot"],
+      "installable": false,
+      "notes": "GitHub organization resource collection with agents, instructions, skills, hooks, workflows, and plugins.",
+      "stars_approx": 30800
+    },
+    {
+      "name": "block/agent-skills",
+      "category": "official_collections",
+      "kind": "github_repo",
+      "url": "https://github.com/block/agent-skills",
+      "compatible_agents": ["Goose", "Claude Desktop", "Other Agent Skills-compatible agents"],
+      "installable": true,
+      "notes": "Block-maintained marketplace-style repository for reusable agent skills.",
+      "stars_approx": 11
+    },
+    {
+      "name": "VoltAgent/awesome-agent-skills",
+      "category": "discovery_hubs",
+      "kind": "github_repo",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "compatible_agents": ["Claude Code", "Codex", "Gemini CLI", "Cursor", "More"],
+      "installable": false,
+      "notes": "Curated high-quality collection of official and community agent skills.",
+      "stars_approx": 17000
+    },
+    {
+      "name": "sickn33/antigravity-awesome-skills",
+      "category": "discovery_hubs",
+      "kind": "github_repo",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills",
+      "compatible_agents": ["Claude Code", "Codex", "Gemini CLI", "Cursor", "More"],
+      "installable": true,
+      "notes": "Large installable catalog with 1400+ skills, bundles, workflows, and docs.",
+      "stars_approx": 34400
+    },
+    {
+      "name": "skillmatic-ai/awesome-agent-skills",
+      "category": "discovery_hubs",
+      "kind": "github_repo",
+      "url": "https://github.com/skillmatic-ai/awesome-agent-skills",
+      "compatible_agents": ["General agent skills ecosystem"],
+      "installable": false,
+      "notes": "Curated learning and discovery resource for the Agent Skills ecosystem."
+    },
+    {
+      "name": "ComposioHQ/awesome-codex-skills",
+      "category": "discovery_hubs",
+      "kind": "github_repo",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "compatible_agents": ["Codex CLI", "Codex API"],
+      "installable": true,
+      "notes": "Codex-oriented curated skills for practical workflow automation."
+    },
+    {
+      "name": "runkids/skillshare-hub",
+      "category": "discovery_hubs",
+      "kind": "github_repo",
+      "url": "https://github.com/runkids/skillshare-hub",
+      "compatible_agents": ["Skillshare ecosystem", "Multiple AI CLIs"],
+      "installable": false,
+      "notes": "Curated hub and reference template for building an internal organization catalog."
+    },
+    {
+      "name": "vercel-labs/skills",
+      "category": "management_tools",
+      "kind": "github_repo",
+      "url": "https://github.com/vercel-labs/skills",
+      "compatible_agents": ["OpenCode", "Claude Code", "Codex", "Cursor", "40+ more"],
+      "installable": true,
+      "notes": "Open CLI for installing and managing open Agent Skills repositories."
+    },
+    {
+      "name": "runkids/skillshare",
+      "category": "management_tools",
+      "kind": "github_repo",
+      "url": "https://github.com/runkids/skillshare",
+      "compatible_agents": ["Codex", "Claude Code", "OpenClaw", "50+ more"],
+      "installable": true,
+      "notes": "Cross-tool skill sync, audit, and management with CLI and UI.",
+      "stars_approx": 1600
+    },
+    {
+      "name": "jiweiyeah/Skills-Manager",
+      "category": "management_tools",
+      "kind": "github_repo",
+      "url": "https://github.com/jiweiyeah/Skills-Manager",
+      "compatible_agents": ["Claude Code", "Codex", "Opencode", "Other AI coding tools"],
+      "installable": true,
+      "notes": "Desktop GUI for organizing, syncing, and sharing skills.",
+      "stars_approx": 548
+    },
+    {
+      "name": "VikashLoomba/copilot-mcp",
+      "category": "management_tools",
+      "kind": "github_repo",
+      "url": "https://github.com/VikashLoomba/copilot-mcp",
+      "compatible_agents": ["GitHub Copilot", "Claude Code", "Codex CLI"],
+      "installable": true,
+      "notes": "VS Code extension for discovering and installing MCP resources for coding agents."
+    },
+    {
+      "name": "GitHub Topics: agent-skills",
+      "category": "topic_pages",
+      "kind": "github_topic",
+      "url": "https://github.com/topics/agent-skills",
+      "compatible_agents": ["General ecosystem"],
+      "installable": false,
+      "notes": "Best GitHub-level entry page for the broader Agent Skills ecosystem."
+    },
+    {
+      "name": "GitHub Topics: codex-skills",
+      "category": "topic_pages",
+      "kind": "github_topic",
+      "url": "https://github.com/topics/codex-skills",
+      "compatible_agents": ["Codex"],
+      "installable": false,
+      "notes": "GitHub topic page focused on Codex-compatible skills and libraries."
+    },
+    {
+      "name": "GitHub Topics: claude-code-skills",
+      "category": "topic_pages",
+      "kind": "github_topic",
+      "url": "https://github.com/topics/claude-code-skills",
+      "compatible_agents": ["Claude Code"],
+      "installable": false,
+      "notes": "GitHub topic page focused on Claude Code-compatible skills and libraries."
+    }
+  ]
+}
