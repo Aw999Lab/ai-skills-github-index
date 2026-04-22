@@ -1,29 +1,30 @@
 # AI Skills GitHub 索引
 
 ![skills curated](https://img.shields.io/badge/skills-curated-2563eb)
-![github links](https://img.shields.io/badge/github-links%2018-111827)
+![github links](https://img.shields.io/badge/github-links%2040-111827)
 ![agents](https://img.shields.io/badge/agents-Codex%20%7C%20Claude%20%7C%20Copilot-16a34a)
 ![status](https://img.shields.io/badge/status-active-22c55e)
 ![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
 
 更新时间：2026-04-22
 
-这是一个面向 `Codex`、`Claude Code`、`Gemini CLI`、`Cursor`、`GitHub Copilot` 等 AI 编码代理的 GitHub skill 资源整理仓库。
+这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skill 资源整理仓库。
 
-我优先收录了这几类项目：
+当前已整理 `40` 个 GitHub 条目，覆盖：
 
-- 直接包含 `SKILL.md`、`skills/` 目录或标准化 skill 包
-- 可以直接安装给 AI agent 使用
-- 能帮助你发现、同步、管理、筛选 skills
-- 近期仍在维护，且社区活跃度较高
+- 官方技能仓库
+- 专业领域技能库
+- 大型技能目录 / 聚合仓库
+- 技能标准、构建器与管理工具
+- GitHub Topics 入口页
 
 ## 目录导航
 
 - [快速开始](#快速开始)
-- [按 Agent 分组速查](#按-agent-分组速查)
-- [推荐先看](#推荐先看)
+- [这次新增的重点仓库](#这次新增的重点仓库)
 - [仓库内容](#仓库内容)
-- [使用建议](#使用建议)
+- [元数据字段](#元数据字段)
+- [刷新方式](#刷新方式)
 - [备注](#备注)
 
 ## 快速开始
@@ -32,9 +33,12 @@
 
 优先看这些：
 
+- [openai/skills](https://github.com/openai/skills)
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 - [huggingface/skills](https://github.com/huggingface/skills)
+- [microsoft/skills](https://github.com/microsoft/skills)
+- [trailofbits/skills](https://github.com/trailofbits/skills)
 - [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills)
 - [GitHub Topics: codex-skills](https://github.com/topics/codex-skills)
 
@@ -44,8 +48,11 @@
 
 - [anthropics/skills](https://github.com/anthropics/skills)
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
+- [trailofbits/skills](https://github.com/trailofbits/skills)
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
-- [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
 - [GitHub Topics: claude-code-skills](https://github.com/topics/claude-code-skills)
 
 ### 如果你主要用 GitHub Copilot
@@ -53,30 +60,36 @@
 优先看这些：
 
 - [github/awesome-copilot](https://github.com/github/awesome-copilot)
+- [microsoft/skills](https://github.com/microsoft/skills)
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 - [VikashLoomba/copilot-mcp](https://github.com/VikashLoomba/copilot-mcp)
 - [runkids/skillshare](https://github.com/runkids/skillshare)
 
-## 按 Agent 分组速查
+### 如果你想按专业领域找 skills
 
-| Agent | 建议先看 | 说明 |
-| --- | --- | --- |
-| Codex | `vercel-labs/agent-skills` / `addyosmani/agent-skills` / `huggingface/skills` / `ComposioHQ/awesome-codex-skills` | 偏工程工作流、Web 项目、AI/ML 任务和 Codex 定向能力 |
-| Claude Code | `anthropics/skills` / `vercel-labs/agent-skills` / `VoltAgent/awesome-agent-skills` / `sickn33/antigravity-awesome-skills` | 适合先看官方 skill 规范，再看大规模聚合库 |
-| GitHub Copilot | `github/awesome-copilot` / `addyosmani/agent-skills` / `VikashLoomba/copilot-mcp` | 偏 Copilot 生态资源、工程流程技能和工具发现 |
-| 通用跨工具 | `runkids/skillshare` / `vercel-labs/skills` / `jiweiyeah/Skills-Manager` | 适合同时维护多套 AI CLI / IDE 助手的技能体系 |
+优先看这些：
 
-## 推荐先看
+- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
+- [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills)
+- [phuryn/pm-skills](https://github.com/phuryn/pm-skills)
+- [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills)
+- [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill)
+- [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill)
 
-| 项目 | 定位 | 适合谁 |
-| --- | --- | --- |
-| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Agent Skills 仓库 | 想看官方 skill 范式、模板、文档能力技能的人 |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Vercel 官方技能集合 | 做 React / Next.js / Web 质量审查 / 部署的人 |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 工程工作流技能库 | 想把 spec / plan / build / test / review 流程标准化的人 |
-| [huggingface/skills](https://github.com/huggingface/skills) | Hugging Face 官方技能库 | 做模型、数据集、论文、Gradio、训练任务的人 |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | GitHub Copilot 生态资源库 | 想收集 Copilot agents / skills / instructions / hooks 的人 |
-| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 高质量聚合目录 | 想快速横向扫一遍主流 skill 仓库的人 |
-| [runkids/skillshare](https://github.com/runkids/skillshare) | 跨工具同步与管理 | 想把 skill 在 Codex、Claude Code 等工具里共用的人 |
+## 这次新增的重点仓库
+
+- [openai/skills](https://github.com/openai/skills): OpenAI 官方 Codex skills 目录
+- [microsoft/skills](https://github.com/microsoft/skills): Microsoft 的 skills、MCP、AGENTS.md 资源集合
+- [trailofbits/skills](https://github.com/trailofbits/skills): 偏安全研究与漏洞审计的技能库
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills): 高热度 Claude skills 聚合目录
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code): Claude Code 生态大目录
+- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills): 科研、工程、分析方向技能库
+- [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills): 中文社区里很有代表性的 skills 集合
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills): 大型多领域技能市场
+- [phuryn/pm-skills](https://github.com/phuryn/pm-skills): 产品经理 / 增长 / 策略方向技能库
+- [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills): iOS / Swift / SwiftUI 专用技能库
+- [testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill): Playwright 测试技能
+- [baidu-netdisk/bdpan-storage](https://github.com/baidu-netdisk/bdpan-storage): 百度网盘文件工作流 skill
 
 ## 仓库内容
 
@@ -86,7 +99,7 @@
 
 ## 元数据字段
 
-`data/ai-skills-links.json` 现在会尽量为 GitHub 仓库类条目补这些字段：
+`data/ai-skills-links.json` 会尽量为 GitHub 仓库类条目补这些字段：
 
 - `stars`
 - `forks`
@@ -115,17 +128,12 @@ node scripts/update-github-metadata.js
 - `GitHub Topics` 这类入口页会保留原始信息
 - 如果设置了 `GITHUB_TOKEN` 或 `GH_TOKEN`，请求配额会更稳
 
-## 使用建议
-
-1. 如果你想直接安装高质量 skills，优先看 `anthropics/skills`、`vercel-labs/agent-skills`、`huggingface/skills`。
-2. 如果你想批量找资源，优先看 `VoltAgent/awesome-agent-skills`、`sickn33/antigravity-awesome-skills`、GitHub Topics 页。
-3. 如果你想把 skills 长期整理成自己的体系，优先看 `runkids/skillshare`、`jiweiyeah/Skills-Manager`、`vercel-labs/skills`。
-
 ## 备注
 
-- 本仓库偏“资源整理”，不是单一 skill 安装包。
+- 本仓库偏“资源整理 + 可更新索引”，不是单一 skill 安装包。
+- 现在不只是精选入口，也开始覆盖更多真实可装的技能仓库。
 - 星标、License 和仓库活跃度字段可以通过更新脚本刷新。
-- 后续如果你要，我可以继续帮你补一版：
-  - 按中文资源优先筛选
-  - 按“可直接安装”排序
-  - 做一个自动更新脚本，定期同步最新 skill 仓库
+- 后续如果继续扩容，最值得做的是：
+  - 增加中文优先分组
+  - 增加“按可直接安装排序”
+  - 加 GitHub Actions 定时自动刷新
