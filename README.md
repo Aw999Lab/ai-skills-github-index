@@ -6,9 +6,9 @@
 ![status](https://img.shields.io/badge/status-active-22c55e)
 ![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
 
-![仓库看板娘](assets/repo-guide-girl.png)
+![仓库侦探系看板娘](assets/repo-guide-detective-banner.png)
 
-> 这是我们仓库的原创看板娘“技能导航娘”，负责带你快速找到适合 `Codex`、`Claude Code`、`GitHub Copilot` 等代理的 skills、目录和工具。
+> 这是我们仓库的原创侦探系看板娘“技能导航娘”，用更像“整理线索”的方式带你快速找到适合 `Codex`、`Claude Code`、`GitHub Copilot` 等代理的 skills、目录和工具。
 
 更新时间：2026-04-22
 
