@@ -1,0 +1,108 @@
+{
+  "updated_at": "2026-04-22",
+  "chinese_priority": [
+    {
+      "name": "JimLiu/baoyu-skills",
+      "why": "中文社区里很有代表性的通用 skills 集合。"
+    },
+    {
+      "name": "geekjourneyx/md2wechat-skill",
+      "why": "直接面向中文微信公众号发布流程。"
+    },
+    {
+      "name": "baidu-netdisk/bdpan-storage",
+      "why": "面向中文开发者常用的百度网盘文件工作流。"
+    },
+    {
+      "name": "runkids/skillshare",
+      "why": "中文社区常用的跨工具 skills 同步方案。"
+    },
+    {
+      "name": "jiweiyeah/Skills-Manager",
+      "why": "中文开发者社区里较活跃的桌面 skills 管理器。"
+    }
+  ],
+  "domain_views": [
+    {
+      "title": "Security & Audit",
+      "description": "适合安全研究、漏洞审计、IaC 合规和风险扫描。",
+      "repos": [
+        "trailofbits/skills",
+        "LukasNiessen/terrashark",
+        "cisco-ai-defense/skill-scanner",
+        "block/agent-skills"
+      ]
+    },
+    {
+      "title": "Research & Science",
+      "description": "适合科研、分析、数据驱动研究和 AI/ML 工作流。",
+      "repos": [
+        "huggingface/skills",
+        "K-Dense-AI/scientific-agent-skills",
+        "openai/skills",
+        "anthropics/skills"
+      ]
+    },
+    {
+      "title": "Product, PM & Growth",
+      "description": "适合产品发现、路线图、增长、SEO 和策略工作。",
+      "repos": [
+        "phuryn/pm-skills",
+        "Bhanunamikaze/Agentic-SEO-Skill",
+        "alirezarezvani/claude-skills",
+        "addyosmani/agent-skills"
+      ]
+    },
+    {
+      "title": "Testing & QA",
+      "description": "适合 Playwright、Web 测试和验证工作流。",
+      "repos": [
+        "testdino-hq/playwright-skill",
+        "vercel-labs/agent-skills",
+        "trailofbits/skills"
+      ]
+    },
+    {
+      "title": "Apple, Mobile & Frontend",
+      "description": "适合 iOS、SwiftUI、Symfony UX、前端和应用 UI 流程。",
+      "repos": [
+        "dpearson2699/swift-ios-skills",
+        "smnandre/symfony-ux-skills",
+        "antfu/skills",
+        "vercel-labs/agent-skills"
+      ]
+    },
+    {
+      "title": "Knowledge, Planning & Writing",
+      "description": "适合长期知识库、规划、内容与文档流。",
+      "repos": [
+        "OthmanAdi/planning-with-files",
+        "gapmiss/obsidian-plugin-skill",
+        "JimLiu/baoyu-skills",
+        "geekjourneyx/md2wechat-skill"
+      ]
+    },
+    {
+      "title": "Developer Tooling & Sync",
+      "description": "适合 skills 安装、同步、审计、市场和团队管理。",
+      "repos": [
+        "vercel-labs/skills",
+        "runkids/skillshare",
+        "jiweiyeah/Skills-Manager",
+        "athola/skrills",
+        "aiskillstore/marketplace",
+        "refly-ai/refly"
+      ]
+    },
+    {
+      "title": "Voice, Files & Chinese Workflows",
+      "description": "适合语音代理、文件流转与中文本地化工作场景。",
+      "repos": [
+        "VapiAI/skills",
+        "baidu-netdisk/bdpan-storage",
+        "geekjourneyx/md2wechat-skill",
+        "JimLiu/baoyu-skills"
+      ]
+    }
+  ]
+}

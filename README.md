@@ -1,7 +1,7 @@
 # AI Skills GitHub 索引
 
 ![skills curated](https://img.shields.io/badge/skills-curated-2563eb)
-![github links](https://img.shields.io/badge/github-links%2040-111827)
+![github links](https://img.shields.io/badge/github-links%2050-111827)
 ![agents](https://img.shields.io/badge/agents-Codex%20%7C%20Claude%20%7C%20Copilot-16a34a)
 ![status](https://img.shields.io/badge/status-active-22c55e)
 ![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
@@ -10,7 +10,7 @@
 
 这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skill 资源整理仓库。
 
-当前已整理 `40` 个 GitHub 条目，覆盖：
+当前已整理 `50` 个 GitHub 条目，覆盖：
 
 - 官方技能仓库
 - 专业领域技能库
@@ -21,11 +21,18 @@
 ## 目录导航
 
 - [快速开始](#快速开始)
+- [快速视图](#快速视图)
 - [这次新增的重点仓库](#这次新增的重点仓库)
 - [仓库内容](#仓库内容)
 - [元数据字段](#元数据字段)
 - [刷新方式](#刷新方式)
 - [备注](#备注)
+
+## 快速视图
+
+如果你不想先看完整索引，可以直接看这页：
+
+- [中文优先 / 可直接安装 / 垂直领域视图](docs/skill-views.md)
 
 ## 快速开始
 
@@ -94,8 +101,10 @@
 ## 仓库内容
 
 - [详细索引](docs/ai-skills-github-index.md)
+- [快速视图](docs/skill-views.md)
 - [JSON 数据](data/ai-skills-links.json)
 - [更新脚本](scripts/update-github-metadata.js)
+- [视图生成脚本](scripts/build-curated-views.js)
 
 ## 元数据字段
 
@@ -119,6 +128,7 @@
 
 ```bash
 node scripts/update-github-metadata.js
+node scripts/build-curated-views.js
 ```
 
 说明：
@@ -127,6 +137,7 @@ node scripts/update-github-metadata.js
 - 仅对 `kind = github_repo` 的条目请求 GitHub API
 - `GitHub Topics` 这类入口页会保留原始信息
 - 如果设置了 `GITHUB_TOKEN` 或 `GH_TOKEN`，请求配额会更稳
+- `build-curated-views.js` 会生成中文优先、可安装、垂直领域视图
 
 ## 备注
 
