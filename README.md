@@ -1,10 +1,10 @@
 # AI Skills GitHub 索引
 
 ![skills curated](https://img.shields.io/badge/skills-curated-2563eb)
-![github links](https://img.shields.io/badge/github-links%2050-111827)
+![github links](https://img.shields.io/badge/github-links%201659-111827)
 ![agents](https://img.shields.io/badge/agents-Codex%20%7C%20Claude%20%7C%20Copilot-16a34a)
 ![status](https://img.shields.io/badge/status-active-22c55e)
-![updated](https://img.shields.io/badge/updated-2026--04--22-f59e0b)
+![updated](https://img.shields.io/badge/updated-2026--04--23-f59e0b)
 
 ![仓库侦探系看板娘](assets/repo-guide-detective-banner.png)
 
@@ -22,28 +22,32 @@
 | 找垂直领域仓库 | `按领域选仓库`、[快速视图](docs/skill-views.md) |
 | 想继续往外扩搜 | [详细索引](docs/ai-skills-github-index.md) |
 
-更新时间：2026-04-22
+更新时间：2026-04-23
 
 这是一个面向 `Codex`、`Claude Code`、`GitHub Copilot`、`Gemini CLI`、`Cursor` 等 AI 编码代理的 GitHub skills 索引仓库，用来帮助开发者快速发现官方 skills、可直接安装的仓库、中文优先资源、以及不同垂直领域里值得继续深挖的项目。
+
+现在这套索引同时支持 `人工精选入口 + GitHub 自动发现扩容 + GitHub Actions 定时刷新`，不再只是静态整理页。
 
 ## 项目概览
 
 | 指标 | 当前情况 |
 | --- | --- |
-| 条目总数 | `50` |
-| 可直接安装仓库 | `37` |
-| 官方技能仓库 | `10` |
-| 专业领域技能库 | `17` |
-| 聚合目录 / 发现型仓库 | `11` |
-| 管理工具 / 构建器 | `8` |
+| 条目总数 | `1659` |
+| 可直接安装仓库 | `1482` |
+| 官方技能仓库 | `24` |
+| 专业领域技能库 | `701` |
+| 聚合目录 / 发现型仓库 | `578` |
+| 标准 / 规范 | `27` |
+| 管理工具 / 构建器 | `326` |
 | GitHub Topics 入口页 | `3` |
-| 最近刷新 | `2026-04-22` |
+| 最近刷新 | `2026-04-23` |
 
 | 类型 | 说明 |
 | --- | --- |
 | 官方技能仓库 | 官方或高质量原生 skills 仓库 |
 | 专业领域技能库 | 安全、科研、产品、测试、中文工作流等垂直方向 |
 | 大型技能目录 / 聚合仓库 | 用来批量发现和筛选 skills |
+| 标准 / 规范 | Agent Skills 相关规范、文档与标准入口 |
 | 标准、构建器与管理工具 | 适合安装、同步、管理、审计、生成视图 |
 | GitHub Topics 入口页 | 用来继续往外扩搜更多仓库 |
 
@@ -54,8 +58,11 @@
 | [详细索引](docs/ai-skills-github-index.md) | 查看完整分类与代表性仓库 |
 | [快速视图](docs/skill-views.md) | 直接按中文优先、可安装、垂直领域筛选 |
 | [JSON 数据](data/ai-skills-links.json) | 读取结构化数据做二次加工 |
+| [自动发现脚本](scripts/sync-github-discovery.js) | 从 GitHub 搜索与 Topics 自动扩容仓库条目 |
 | [元数据更新脚本](scripts/update-github-metadata.js) | 刷新 stars、license、更新时间等仓库元数据 |
+| [详细索引生成脚本](scripts/build-detailed-index.js) | 从 JSON 数据重建完整详细索引页 |
 | [视图生成脚本](scripts/build-curated-views.js) | 生成快速视图文档 |
+| [自动刷新工作流](.github/workflows/refresh-index.yml) | 定时同步 GitHub 条目、元数据和文档 |
 
 ## 快速开始
 

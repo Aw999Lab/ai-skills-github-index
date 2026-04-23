@@ -5,8 +5,18 @@ const path = require("node:path");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT_DIR, "data", "ai-skills-links.json");
-const TODAY = new Date().toISOString().slice(0, 10);
 const GITHUB_API_BASE = "https://api.github.com";
+
+function getToday() {
+  const formatter = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+
+  return formatter.format(new Date());
+}
 
 function parseRepoUrl(url) {
   const match = /^https:\/\/github\.com\/([^/]+)\/([^/#?]+)\/?$/.exec(url);
@@ -69,15 +79,13 @@ async function fetchRepoMetadata(fullName) {
 }
 
 function buildRepoItem(existingItem, repoData) {
+  const today = getToday();
+  const preservedItem = { ...existingItem };
+  delete preservedItem.check_error;
+
   return compactObject({
-    name: existingItem.name,
-    category: existingItem.category,
-    kind: existingItem.kind,
-    url: existingItem.url,
+    ...preservedItem,
     repo_full_name: repoData.full_name,
-    compatible_agents: existingItem.compatible_agents,
-    installable: existingItem.installable,
-    notes: existingItem.notes,
     description: repoData.description || existingItem.description,
     stars: repoData.stargazers_count,
     forks: repoData.forks_count,
@@ -90,18 +98,20 @@ function buildRepoItem(existingItem, repoData) {
     created_at: repoData.created_at,
     updated_at: repoData.updated_at,
     pushed_at: repoData.pushed_at,
-    last_checked: TODAY,
+    last_checked: today,
   });
 }
 
 function buildPassthroughItem(existingItem) {
+  const today = getToday();
   return compactObject({
     ...existingItem,
-    last_checked: existingItem.last_checked || TODAY,
+    last_checked: existingItem.last_checked || today,
   });
 }
 
 async function main() {
+  const today = getToday();
   const raw = await fs.readFile(DATA_FILE, "utf8");
   const data = JSON.parse(raw);
 
@@ -118,7 +128,7 @@ async function main() {
       updatedItems.push(
         compactObject({
           ...item,
-          last_checked: TODAY,
+          last_checked: today,
           check_error: "Unsupported GitHub repository URL format",
         }),
       );
@@ -133,7 +143,7 @@ async function main() {
       updatedItems.push(
         compactObject({
           ...item,
-          last_checked: TODAY,
+          last_checked: today,
           check_error: error.message,
         }),
       );
@@ -142,9 +152,10 @@ async function main() {
   }
 
   const output = {
-    updated_at: TODAY,
+    updated_at: today,
     description: data.description,
-    refresh_command: "node scripts/update-github-metadata.js",
+    refresh_command: data.refresh_command || "node scripts/refresh-all.js",
+    discovery_command: data.discovery_command || "node scripts/sync-github-discovery.js",
     items: updatedItems,
   };
 

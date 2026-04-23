@@ -1,0 +1,96 @@
+{
+  "updated_at": "2026-04-23",
+  "description": "GitHub discovery sources for expanding the AI skills index from topics and repository search.",
+  "queries": [
+    {
+      "id": "topic-agent-skills",
+      "description": "Repositories tagged with the broad Agent Skills topic.",
+      "query": "topic:agent-skills archived:false is:public",
+      "default_category": "discovery_hubs",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 5
+    },
+    {
+      "id": "topic-codex-skills",
+      "description": "Repositories tagged with the Codex skills topic.",
+      "query": "topic:codex-skills archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 5
+    },
+    {
+      "id": "topic-claude-code-skills",
+      "description": "Repositories tagged with the Claude Code skills topic.",
+      "query": "topic:claude-code-skills archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 5
+    },
+    {
+      "id": "search-agent-skills",
+      "description": "Repository search for agent skills naming and descriptions.",
+      "query": "\"agent skills\" in:name,description,readme archived:false is:public",
+      "default_category": "discovery_hubs",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 3
+    },
+    {
+      "id": "search-codex-skills",
+      "description": "Repository search for Codex-focused skills.",
+      "query": "\"codex skills\" in:name,description,readme archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 3
+    },
+    {
+      "id": "search-claude-skills",
+      "description": "Repository search for Claude-focused skills.",
+      "query": "\"claude skills\" in:name,description,readme archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 3
+    },
+    {
+      "id": "search-claude-code-skill",
+      "description": "Repository search for Claude Code skill libraries and examples.",
+      "query": "\"claude code\" skill in:name,description,readme archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 2
+    },
+    {
+      "id": "search-copilot-skills",
+      "description": "Repository search for Copilot-compatible skills and instructions.",
+      "query": "\"copilot\" skills in:name,description,readme archived:false is:public",
+      "default_category": "management_tools",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 2
+    },
+    {
+      "id": "search-skillshare",
+      "description": "Repository search for multi-tool AI skill sharing and sync ecosystems.",
+      "query": "\"skillshare\" \"claude code\" in:name,description,readme archived:false is:public",
+      "default_category": "management_tools",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 2
+    },
+    {
+      "id": "search-skill-md",
+      "description": "Repository search for projects explicitly mentioning SKILL.md.",
+      "query": "\"SKILL.md\" in:readme archived:false is:public",
+      "default_category": "specialized_skill_libraries",
+      "sort": "stars",
+      "order": "desc",
+      "max_pages": 2
+    }
+  ]
+}
